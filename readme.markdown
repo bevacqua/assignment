@@ -2,6 +2,8 @@
 
 > Assign property objects onto other objects, recursively
 
+Footprint for `assignment` sits at around 400 bytes browserified, minified, and gzipped.
+
 # Install
 
 ```shell
