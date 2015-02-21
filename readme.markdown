@@ -21,21 +21,32 @@ Returns `a`.
 It doesn't matter how many objects you hand to `assignment`, they will all be collapsed into the first one.
 
 ```js
-assignment({ name: 'mordecai' }, { name: 'eileen' }, { name: 'rigby' });
+assignment(
+  { name: 'mordecai' },
+  { name: 'eileen' },
+  { name: 'rigby' }
+);
 // <- { name: 'rigby' }
 ```
 
 Object's get replaced recursively, property by property. Note that for any given property `prop`, you'll get back whatever the prototype was for the first `prop` that existed in `a`.
 
 ```js
-assignment({ character: { name: 'mordecai' } }, { character: { color: 'red' } }, { character: { name: 'margaret' } });
+assignment(
+  { character: { name: 'mordecai' } },
+  { character: { color: 'red' } },
+  { character: { name: 'margaret' } }
+);
 // <- { name: 'margaret', color: 'red' }
 ```
 
 Note that arrays don't receive any special treatment. Typically, you want arrays to be replaced.
 
 ```js
-assignment({ characters: ['mordecai', 'margaret'] }, { characters: ['rigby', 'eileen'] });
+assignment(
+  { characters: ['mordecai', 'margaret'] },
+  { characters: ['rigby', 'eileen'] }
+);
 // <- { characters: ['rigby', 'eileen'] }
 ```
 
