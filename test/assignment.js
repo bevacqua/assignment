@@ -23,3 +23,10 @@ test('arrays shouldn\'t be messed with', function (t) {
   t.deepEqual(result, expect);
   t.end();
 });
+
+test('large origin array should be completed replaced as well', function (t) {
+  var result = assignment({ characters: ['mordecai', 'margaret', 'skips'] }, { characters: ['rigby', 'eileen'] });
+  var expect = { characters: ['rigby', 'eileen'] };
+  t.deepEqual(result, expect);
+  t.end();
+});

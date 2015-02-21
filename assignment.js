@@ -8,7 +8,7 @@ function assignment (result) {
     item = stack.shift();
     for (key in item) {
       if (item.hasOwnProperty(key)) {
-        if (result[key] && typeof result[key] === 'object') {
+        if (Object.prototype.toString.call(result[key]) === '[object Object]') {
           result[key] = assignment(result[key], item[key]);
         } else {
           result[key] = item[key];
