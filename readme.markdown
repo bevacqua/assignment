@@ -37,7 +37,7 @@ assignment(
   { character: { color: 'red' } },
   { character: { name: 'margaret' } }
 );
-// <- { name: 'margaret', color: 'red' }
+// <- { character: { name: 'margaret', color: 'red' } }
 ```
 
 Note that arrays don't receive any special treatment. Typically, you want arrays to be replaced.
