@@ -1,4 +1,4 @@
-# 2.0.0 Glass Fortress
+# 2.1.0 Glass Fortress
 
 - Fixed a bug where `assignment` would throw in _IE < 9_
 
