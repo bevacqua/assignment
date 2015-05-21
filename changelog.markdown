@@ -1,3 +1,7 @@
+# 2.2.0 Null Scepter
+
+- Assigning `null` or any primitive value to a property that previously had an object value is now possible
+
 # 2.1.0 Glass Fortress
 
 - Fixed a bug where `assignment` would throw in _IE < 9_
