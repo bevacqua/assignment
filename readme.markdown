@@ -16,7 +16,7 @@ Assigns every property of `b` onto `a`. If the an object already exists on `a` t
 
 Returns `a`.
 
-## Examples
+# Examples
 
 It doesn't matter how many objects you hand to `assignment`, they will all be collapsed into the first one.
 
