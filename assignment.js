@@ -10,7 +10,7 @@ function assignment (result) {
       if (item.hasOwnProperty(key)) {
         if (typeof result[key] === 'object' && result[key] && Object.prototype.toString.call(result[key]) !== '[object Array]') {
           if (typeof item[key] === 'object' && item[key] !== null) {
-            result[key] = assignment(result[key], item[key]);
+            result[key] = assignment({}, result[key], item[key]);
           } else {
             result[key] = item[key];
           }
